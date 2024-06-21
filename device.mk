@@ -140,11 +140,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.memtrack-service
 
-# Doze
-PRODUCT_PACKAGES += \
-    OplusDoze \
-    OplusDozeResCommon
-
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 
@@ -415,7 +410,8 @@ endif
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.multihal
+    android.hardware.sensors-service.oplus-multihal \
+    sensors.oplus
 
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 30
