@@ -27,4 +27,5 @@ cc_prebuilt_binary {
          none: true,
      },
      srcs: ["RemovePackagesOscaro"],
+     check_elf_files: false,
 }
