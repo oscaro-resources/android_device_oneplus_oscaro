@@ -806,7 +806,6 @@ odm/lib64/libimgClarityEvaluate.so
 odm/lib64/libml_util.so
 odm/lib64/libmotionblur.so
 odm/lib64/libmpbase.so
-odm/lib64/libop-ai-beauty-body-detection.so
 odm/lib64/libop-ai-beauty-faceretouch-cn.so
 odm/lib64/liboplusblur_capture_api.so
 odm/lib64/libormshalclient.so
