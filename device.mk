@@ -142,7 +142,8 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    OplusDoze
+    OplusDoze \
+    OplusDozeResCommon
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
