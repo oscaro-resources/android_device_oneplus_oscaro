@@ -28,6 +28,15 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    charger_res_images_vendor \
+    libsuspend
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Init
 PRODUCT_PACKAGES += \
     init.device.rc
@@ -56,6 +65,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Touch
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/oneplus/oscaro/oscaro-vendor.mk)
