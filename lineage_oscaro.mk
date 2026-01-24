@@ -15,6 +15,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from oscaro device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_oscaro
 PRODUCT_DEVICE := oscaro
