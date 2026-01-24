@@ -4,4 +4,5 @@ git clone https://github.com/oscaro-resources/vendor_oneplus_oscaro.git -b 16.2 
 git clone https://github.com/oscaro-resources/vendor_oneplus_sm6375-common.git -b 16.2 vendor/oneplus/sm6375-common
 git clone https://github.com/oscaro-resources/hardware_oplus.git -b 16.2 hardware/oplus
 git clone https://github.com/oscaro-resources/android_kernel_oneplus_sm6375.git -b 16.2 kernel/oneplus/sm6375 --depth=1
-
+git clone https://github.com/oscaro-resources/hardware_dolby.git -b lunaris-dolby hardware/dolby
+git clone https://github.com/AxionAOSP/android_packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
