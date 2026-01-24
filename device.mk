@@ -59,6 +59,10 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget
 
+# RemovePackages
+ PRODUCT_PACKAGES += \
+     RemovePackagesOscaro
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
