@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- The maximum range of gamma adjustment possible using the screen
+         auto-brightness adjustment setting. -->
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">150%</fraction>
+
+    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
+         autodetected from the Configuration. -->
+    <bool name="config_showNavigationBar">true</bool>
+
+    <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
+         on the headphone/microphone jack. When false use the older uevent framework. -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
+
+    <!-- Default files to pin via Pinner Service -->
+    <string-array name="config_defaultPinnerServiceFiles">
+        <item>/apex/com.android.art/javalib/arm/boot-core-libart.art</item>
+        <item>/apex/com.android.art/javalib/arm/boot-core-libart.oat</item>
+        <item>/apex/com.android.art/javalib/arm/boot-core-libart.vdex</item>
+        <item>/apex/com.android.art/javalib/arm/boot-okhttp.oat</item>
+        <item>/apex/com.android.art/javalib/arm/boot.oat</item>
+        <item>/apex/com.android.art/javalib/arm/boot.vdex</item>
+        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.art</item>
+        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.oat</item>
+        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.vdex</item>
+        <item>/apex/com.android.art/javalib/arm64/boot-okhttp.oat</item>
+        <item>/apex/com.android.art/javalib/arm64/boot.oat</item>
+        <item>/apex/com.android.art/javalib/arm64/boot.vdex</item>
+        <item>/apex/com.android.art/javalib/core-icu4j.jar</item>
+        <item>/apex/com.android.art/javalib/core-libart.jar</item>
+        <item>/apex/com.android.art/javalib/core-oj.jar</item>
+        <item>/apex/com.android.art/lib/libart-compiler.so</item>
+        <item>/apex/com.android.art/lib/libart.so</item>
+        <item>/apex/com.android.art/lib/libartbase.so</item>
+        <item>/apex/com.android.conscrypt/javalib/conscrypt.jar</item>
+        <item>/apex/com.android.conscrypt/lib/libcrypto.so</item>
+        <item>/apex/com.android.conscrypt/lib64/libcrypto.so</item>
+        <item>/system/framework/arm/boot-framework.oat</item>
+        <item>/system/framework/arm64/boot-framework.oat</item>
+        <item>/system/framework/arm64/boot-telephony-common.art</item>
+        <item>/system/framework/boot-framework.vdex</item>
+        <item>/system/framework/framework-res.apk</item>
+        <item>/system/framework/oat/arm64/services.odex</item>
+        <item>/system/framework/oat/arm64/services.vdex</item>
+        <item>/system/framework/telephony-common.jar</item>
+        <item>/system/lib/libandroid_runtime.so</item>
+        <item>/system/lib/libc++.so</item>
+        <item>/system/lib/libhidlbase.so</item>
+        <item>/system/lib/libhwui.so</item>
+        <item>/system/lib64/android.hardware.media.bufferpool@2.0.so</item>
+        <item>/system/lib64/android.hardware.media.c2@1.1.so</item>
+        <item>/system/lib64/libbinder.so</item>
+        <item>/system/lib64/libcodec2_hidl_client@1.0.so</item>
+        <item>/system/lib64/libcodec2_vndk.so</item>
+        <item>/system/lib64/libhwui.so</item>
+        <item>/system/lib64/libmedia_omx.so</item>
+        <item>/system/lib64/libmediametrics.so</item>
+        <item>/system/lib64/libRS_internal.so</item>
+        <item>/system/lib64/libsfplugin_ccodec.so</item>
+        <item>/system/lib64/libsfplugin_ccodec_utils.so</item>
+        <item>/system/lib64/libsqlite.so</item>
+        <item>/system/lib64/libstagefright.so</item>
+        <item>/system/lib64/libstagefright_bufferpool@2.0.1.so</item>
+        <item>/system/lib64/libsurfaceflinger.so</item>
+        <item>/vendor/lib64/libllvm-glnext.so</item>
+    </string-array>
+
+    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
+         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
+         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
+         and Strength as defined in Authenticators.java -->
+    <string-array name="config_biometric_sensors" translatable="false">
+        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
+    </string-array>
+
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
+
+    <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
+    <bool name="config_telephony5gStandalone">true</bool>
+
+    <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
+    <bool name="config_telephony5gNonStandalone">true</bool>
+
+    <!-- Enable doze alwaysOn Display -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+    during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+    <!-- True if the display hardware only has brightness buckets rather than a full range of
+    backlight values -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
+</resources>
