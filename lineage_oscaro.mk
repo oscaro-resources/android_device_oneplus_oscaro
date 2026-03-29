@@ -15,6 +15,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from oscaro device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# AxionAOSP Flags
+AXION_CAMERA_REAR_INFO := 64,2,2
+AXION_CAMERA_FRONT_INFO := 16
+AXION_MAINTAINER := Chethan
+AXION_PROCESSOR := Snapdragon_695(SM6375)
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDES_LOS_PREBUILTS := true
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_oscaro
 PRODUCT_DEVICE := oscaro
