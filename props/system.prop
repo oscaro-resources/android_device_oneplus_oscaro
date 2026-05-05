@@ -1,6 +1,11 @@
 #
 # system.prop
 #
+# About phone
+ro.infinity.soc=Snapdragon® 695
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2412, 120 Hz
+ro.infinity.camera=64MP + 2MP + 2MP , 16MP
 
 # CNE
 persist.vendor.cne.feature=1

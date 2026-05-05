@@ -9,13 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from oscaro device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+# InfinityX Flags
+INFINITY_BUILD_TYPE := PRIVATE
+INFINITY_MAINTAINER := "No_Cache"
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_oscaro

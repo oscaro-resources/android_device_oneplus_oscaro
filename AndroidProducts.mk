@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_oscaro.mk
+    $(LOCAL_DIR)/infinity_oscaro.mk
 
