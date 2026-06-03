@@ -15,6 +15,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from oscaro device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# LunarisAOSP Flags
+LUNARIS_BUILD_TYPE := OFFICIAL
+WITH_GMS := true
+TARGET_SUPPORTS_GOOGLE_TELEPHONY := true
+SURFACE_FLINGER_BOOST := true
+WITH_BCR := true
+TARGET_ENABLE_BLUR := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_oscaro
 PRODUCT_DEVICE := oscaro
