@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_oscaro.mk
+    $(LOCAL_DIR)/voltage_oscaro.mk
 
