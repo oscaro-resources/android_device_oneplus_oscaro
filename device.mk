@@ -67,5 +67,11 @@ PRODUCT_SOONG_NAMESPACES += \
 # Touch
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
 
+# Axion
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ax_kernel_manager_oscaro.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_kernel_manager.xml \
+    $(LOCAL_PATH)/configs/ax_perf_thermal_holi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_perf_thermal.xml \
+    $(LOCAL_PATH)/init/ax_init_holi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ax_init_holi.rc
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/oneplus/oscaro/oscaro-vendor.mk)
