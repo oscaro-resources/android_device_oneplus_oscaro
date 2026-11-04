@@ -22,6 +22,7 @@ TARGET_SUPPORTS_GOOGLE_TELEPHONY := true
 SURFACE_FLINGER_BOOST := false
 WITH_BCR := true
 TARGET_ENABLE_BLUR := true
+TARGET_LOW_END_BLUR := true
 WITH_PIXEL_LAUNCHER := true
 
 # Device identifier. This must come after all inclusions.
